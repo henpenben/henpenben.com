@@ -1,0 +1,48 @@
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+section {
+  margin: 3%;
+  text-align: center;
+  background-color: #161616;
+  border: 0.25rem solid #FF7AB6;
+  border-radius: 2rem;
+}
+
+h1, p {
+  margin: 0.66rem;
+}
+
+main p {
+  font-style: italic;
+}
+/*
+#survival, #creative {
+  flex-grow: 1;
+}
+
+#map {
+  flex-grow: 2;
+}
+
+#positioner {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#map-text {
+} /*
