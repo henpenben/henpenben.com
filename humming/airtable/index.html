@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>airtable api playground</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <span id="error"></span>
+      <section class="input">
+        <ul>
+          <li>
+            <h1>load how many records?</h1>
+            <input id="count" type="number" min="0" placeholder="leave blank for all">
+          </li>
+          <li id="sort">
+            <h1>sort by</h1>
+            <select required>
+              <option value="" disabled selected>...</option>
+              <option value="id">Campaign ID</option>
+              <option value="name">Name</option>
+              <option value="imps">Impressions</option>
+              <option value="clicks">Clicks</option>
+              <option value="ctr">Click-through-rate</option>
+            </select>
+          </li>
+          <li>
+            <form>
+              <input id="asc" type="radio" name="sort" value="ascending" checked />
+                Smallest to Largest<br />
+              <input type="radio" name="sort" value="descending" /> Largest to Smallest
+            </form>
+          </li>
+        </ul>
+        <input id="pull-btn" type="submit" value="pull data">
+        <button disabled id="display-btn">display data</button>
+        <p>press pull data and then display data, <br />idk why I made it like that</p>
+      </section>
+      <section class="input">
+        <ul>
+          <li>
+            <h2>add a record!</h2>
+          </li>
+          <li>
+            <input id="name" type="text" placeholder="name" />
+          </li>
+          <li>
+            <input id="impressions" type="number" min="0" placeholder="impressions" />
+          </li>
+          <li>
+            <input id="clicks" type="number" min="0" placeholder="clicks" />
+          </li>
+        </ul>
+        <input id="send-btn" type="submit" value="send record!" disabled>
+      </section>
+      <section id="#table-area"><table id="table" class="hidden"></table></section>
+    </main>
+  </body>
+</html>
