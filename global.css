@@ -34,19 +34,35 @@ a:active {
 
 a.current {
   font-weight: bold;
+  cursor: default;
+}
+
+h1, p {
+  margin: 0.66rem;
 }
 
 nav {
   position: sticky;
   background-color: #161616;
 }
-nav ul {
+
+nav > ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-left: 0;
+  margin: 0;
 }
 
-nav ul li {
+nav > ul li {
   display: block;
+  padding: 6px 8px 8px 6px;
+  transition: background-color ease-in-out 133ms;
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav > ul li:hover {
+  background-color: #3d3d3d;
 }

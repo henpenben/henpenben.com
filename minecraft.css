@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+section {
+  margin: 3%;
+  text-align: center;
+  background-color: #161616;
+  border: 0.25rem solid #FF7AB6;
+  border-radius: 2rem;
+}
+
+main p {
+  font-style: italic;
+}
