@@ -28,6 +28,7 @@ function addNavBar() {
   let url = window.location.href.split("/");
   url = url[url.length - 1];
   qs(`nav a[href='${url}']`).classList.add("current");
+  qs(".current").parentNode.parentNode.classList.add("current");
   qs(`nav a[href='${url}']`).href = "";
 }
 
